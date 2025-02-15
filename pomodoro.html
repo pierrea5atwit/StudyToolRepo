@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Clock</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Full height and center content */
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            background-color: #282c34;
+            color: white;
+        }
+
+        /* Clock container */
+        #clock {
+            font-size: 4rem;
+            font-weight: bold;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* Button container */
+        #controls {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* Button styles */
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #61dafb;
+            color: black;
+        }
+
+        button:disabled {
+            background-color: #aaa;
+            cursor: not-allowed;
+        }
+
+        .active {
+            background-color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <!-- Clock container -->
+    <div id="clock">25:00</div>
+
+    <!-- Button controls -->
+    <div id="controls">
+        <button id="startStopBtn">Start</button>
+        <button id="resetBtn" disabled>Reset</button>
+        <button id="setWorkBtn">Set Work Time</button>
+        <button id="setRestBtn">Set Rest Time</button>
+    </div>
+</body>
+</html>
