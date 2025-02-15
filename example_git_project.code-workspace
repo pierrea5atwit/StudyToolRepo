@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../example_git_project"
+		},
+		{
+			"name": "StudyToolRepo",
+			"path": "StudyToolRepo"
+		}
+	],
+	"settings": {}
+}

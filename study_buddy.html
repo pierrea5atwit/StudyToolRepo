@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style_page2.css">
+
+     <!--1-->
+
+    <script>
+      //subscription alert
+      function subscribe() {
+    var email = document.getElementById("emailInput").value;
+    if (email) {
+        alert("Thank you for your subscription, " + email + "!");
+    } else {
+        alert("Please enter a valid email address.");
+    }
+}
+    </script>
+
+    <title>study buddy</title>
+  </head>
+  <body class="body_main">
+    <div id="introMessage"></div>
+    
+
+    <h1 class="h1_main">Welcome to our app!</h1>
+    <h2>Choose accomodation for you</h2>
+
+    <nav class="nav_main">
+      <a href="page1.html">1</a>
+      <a href="page2.html">2</a> 
+      <a href="page3.html">3</a> 
+     
+    </nav>
+
+   
+
+    <footer class="footer_main">
+      <p>Stay in touch for more updates!</p>
+      <input type="email" id="emailInput" placeholder="Enter your email" required>
+      <button onclick="subscribe()">Subscribe</button>
+    </footer>
+
+  </body>
+</html>
